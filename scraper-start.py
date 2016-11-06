@@ -27,7 +27,6 @@ html = br.response().read()
 
 soup = BeautifulSoup(html, "html.parser")
 #need to find defining factor for whole table html tag
-#table = soup.find_all("table", {"class": "electtable", 'id': 'MainContent_dgrdCountyRaceResults', 'style': 'border-collapse:collapse;'})
 
 table = soup.find('table', {'id': "MainContent_dgrdCountyRaceResults"})
 
